@@ -32,14 +32,6 @@ typedef struct cache_page {
 } cache_page_t;
 ```
 
-**Очередь FIFO:**
-```c
-typedef struct {
-    cache_page_t *head;      // Вытеснение отсюда
-    cache_page_t *tail;      // Вставка сюда
-    size_t count;
-} page_queue_t;
-```
 
 ### 2.2 Структура файлов
 
